@@ -9,6 +9,10 @@ div{
 
 }
 
+body:active{
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
 .noselect {
   -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */

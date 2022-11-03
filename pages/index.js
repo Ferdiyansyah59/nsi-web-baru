@@ -102,7 +102,7 @@ export default function Home() {
               </div>
               {/* NAME */}
               <div className='font-bold text-base sm:text-xl lg:text-3xl'>
-                <h1 className='text-black'>Muhammad LUTHFI KIRANSYAH</h1>
+                <h1 className='text-black'>MUHAMMAD LUTHFI KIRANSYAH</h1>
                 <h2 className='text-[#727272]'>Chief Executive Officer</h2>
               </div>
             </div>

@@ -9,17 +9,18 @@ function Report() {
   return (
     <div className='overflow-hidden'>
       <Nav />
-      <section className='w-full h-[90vh] sm:h-[70vh] lg:h-[50vh] xl:h-[90vh] bg-white flex flex-col-reverse lg:flex-row items-center justify-center lg:justify-around'>
+      <section className='w-full h-[90vh] sm:h-[70vh] lg:h-[50vh] xl:h-[90vh] bg-white flex flex-col-reverse lg:flex-row items-center justify-center lg:justify-around 2xl:justify-evenly 2xl:h-[70vh]'>
         <div>
           <h1 className='text-[#325BAB] font-bold text-3xl lg:text-[45px] leading-[3rem]'>
-            Laporan <br />
+            Laporan <br className='2xl:hidden' />
             Perusahaan
           </h1>
-          <p className='text-[#8B8B8B] mt-3'>
+          <p className='text-[#8B8B8B] 2xl:text-xl mt-3'>
             Berikut ringkasan dan laporan perusahaan NSI
           </p>
         </div>
         <img
+          className='2xl:h-[45vh]'
           src='report.svg'
           alt='report'
         />

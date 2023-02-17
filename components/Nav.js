@@ -15,7 +15,11 @@ function Nav() {
       let scr = window.scrollY;
       let nav = document.getElementById('nav');
       if (scr >= 50) {
-        if (pathname === '/articles' || pathname === '/contact') {
+        if (
+          pathname === '/media' ||
+          pathname === '/contact' ||
+          pathname === '/articles'
+        ) {
           setNavBg(
             'bg-[#2EB67D] lg:bg-[#2EB67D] shadow-sm shadow-gray-[#41D698]',
           );
@@ -42,15 +46,15 @@ function Nav() {
   const dropMenu = [
     {
       title: 'Rilis Media',
-      path: '/',
+      path: '/media',
     },
     {
       title: 'Galeri',
-      path: '/',
+      path: '/media',
     },
     {
       title: 'Berita Pilihan',
-      path: '/articles',
+      path: '/media',
     },
   ];
 
@@ -59,7 +63,9 @@ function Nav() {
       id='nav'
       className={`noselect flex flex-col lg:py-5 w-full fixed z-20 top-0 left-0 items-center lg:px-16 font-normal ${navBg} lg:bg-transparent lg:py-0 lg:grid lg:grid-cols-[250px_1fr] xl:grid-cols-[400px_1fr] 2xl:px-32 ${
         navOpen
-          ? pathname === '/articles' || pathname === '/contact'
+          ? pathname === '/media' ||
+            pathname === '/contact' ||
+            pathname === '/articles'
             ? 'bg-[#2EB67D]'
             : 'bg-white'
           : ''
@@ -68,15 +74,17 @@ function Nav() {
       {/* HEADER */}
       <div className='grid grid-cols-2 items-center px-4 w-full lg:w-fit lg:px-0'>
         <Link href='/'>
-          {pathname === '/articles' || pathname === '/contact' ? (
+          {pathname === '/media' ||
+          pathname === '/contact' ||
+          pathname === '/articles' ? (
             <img
-              className='h-24 2xl:h-36'
+              className='h-24 cursor-pointer'
               src='./foot-logo.webp'
               alt='Logo'
             />
           ) : (
             <img
-              className='h-14  2xl:h-20 my-5'
+              className='h-14  2xl:h-20 my-5 cursor-pointer'
               src='./logo.webp'
               alt='Logo'
             />
@@ -87,7 +95,9 @@ function Nav() {
           onClick={toggleMenu}
           id='toggle'
           className={`justify-self-end ${
-            pathname === '/articles' || pathname === '/contact'
+            pathname === '/media' ||
+            pathname === '/contact' ||
+            pathname === '/articles'
               ? 'toggle-white'
               : 'toggle-menu'
           } mt-1 lg:hidden`}
@@ -104,7 +114,9 @@ function Nav() {
         className={`${
           navOpen === false ? 'hidden' : 'flex'
         } justify-self-end lg:flex items-start flex-col gap-10 w-4/5 lg:w-full font-semibold mt-5 lg:mt-0 lg:font-normal ${
-          pathname === '/articles' || pathname === '/contact'
+          pathname === '/media' ||
+          pathname === '/contact' ||
+          pathname === '/articles'
             ? 'text-white'
             : 'text-[#264789] lg:text-[#8B8B8B]'
         } lg:flex-row lg:justify-end lg:items-center h-screen lg:h-fit `}
@@ -112,12 +124,12 @@ function Nav() {
         <div className=' hover:text-black lg:border-none'>
           <Link href='/'>Profil</Link>
         </div>
-        <div className=' hover:text-black lg:border-none'>
+        {/* <div className=' hover:text-black lg:border-none'>
           <Link href='/governance'>Tata Kelola</Link>
         </div>
         <div className=' hover:text-black lg:border-none'>
           <Link href='/report'>Laporan</Link>
-        </div>
+        </div> */}
         <div className=' hover:text-black lg:border-none'>
           <Link href='/career'>Karir</Link>
         </div>
@@ -134,7 +146,9 @@ function Nav() {
           >
             <p
               className={`${
-                pathname === '/articles' || pathname === '/contact'
+                pathname === '/media' ||
+                pathname === '/contact' ||
+                pathname === '/articles'
                   ? 'text-white'
                   : 'text-[#264789] lg:text-[#8B8B8B]'
               }`}
@@ -143,7 +157,9 @@ function Nav() {
             </p>
             <RiArrowDropDownLine
               className={`justify-self-end text-3xl ${
-                pathname === '/articles' || pathname === '/contact'
+                pathname === '/media' ||
+                pathname === '/contact' ||
+                pathname === '/articles'
                   ? 'text-white'
                   : 'text-[#264789] lg:text-[#8B8B8B]'
               }`}
@@ -153,7 +169,9 @@ function Nav() {
             onMouseEnter={() => setIsOpen(true)}
             onMouseLeave={() => setIsOpen(false)}
             className={`${isOpen ? 'basket pt-2' : 'basket hide'} ${
-              pathname === '/articles' || pathname === '/contact'
+              pathname === '/media' ||
+              pathname === '/contact' ||
+              pathname === '/articles'
                 ? 'bg-[#0b4532]'
                 : 'bg-[#2EB67D]'
             } w-full lg:w-32 rounded-lg lg:absolute`}

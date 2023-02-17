@@ -6,24 +6,25 @@ import Link from 'next/link';
 function Career() {
   const data = [
     'Graphic Design',
-    'Social Media Specialist',
-    'Marketing',
-    'System Analyst',
+    // 'Social Media Specialist',
+    // 'Marketing',
+    // 'System Analyst',
   ];
   return (
     <div className='overflow-hidden'>
       <Nav />
-      <section className='w-full h-[90vh] sm:h-[70vh] lg:h-[50vh] xl:h-[90vh] bg-white flex flex-col-reverse lg:flex-row items-center justify-center lg:justify-around'>
-        <div>
-          <h1 className='text-[#325BAB] font-bold text-3xl lg:text-[45px] leading-[3rem]'>
-            Nusantara Siber <br /> Integrasi Karir
+      <section className='w-full h-[90vh] sm:h-[70vh] lg:h-[50vh] xl:h-[90vh] bg-white flex flex-col-reverse lg:flex-row items-center justify-center lg:justify-around 2xl:h-[70vh]'>
+        <div className='w-[95%] sm:w-[400px] 2xl:w-2/6'>
+          <h1 className='text-[#325BAB] font-bold text-3xl lg:text-[45px] lg:leading-[3rem]'>
+            Nusantara Siber <br className='2xl:hidden' /> Integrasi Karir
           </h1>
-          <p className='text-[#8E8E8E] mt-3'>
-            NSI akan konsisten menciptakan lapangan <br /> pekerjaan untuk kamu
+          <p className='text-[#8E8E8E] mt-3 text-sm sm:text-base 2xl:text-xl'>
+            NSI akan konsisten menciptakan lapangan{' '}
+            <br className='2xl:hidden' /> pekerjaan untuk kamu
           </p>
         </div>
         <img
-          className='sm:w-4/5 lg:w-[500px]'
+          className='sm:w-4/5 lg:w-[500px] 2xl:w-[70vh]'
           src='career.svg'
           alt='career'
         />

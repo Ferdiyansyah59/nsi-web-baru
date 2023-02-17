@@ -4,23 +4,25 @@ import FooterComponent from '../components/FooterComponent';
 
 function Contact() {
   return (
-    <div className=''>
+    <div className='overflow-x-hidden'>
       <Nav />
-      <section className='bg-[#2EB67D] w-full h-[90vh] sm:h-[70vh] lg:h-[50vh] xl:h-[90vh] flex flex-col-reverse lg:flex-row items-center justify-center lg:justify-around'>
-        <div>
-          <h1 className='font-bold text-[45px] text-white'>Butuh Bantuan?</h1>
-          <p className='text-white text-base'>
+      <section className='bg-[#2EB67D] w-full h-[90vh] sm:h-[70vh] lg:h-[50vh] xl:h-[90vh] flex flex-col-reverse lg:flex-row items-center justify-center lg:justify-around 2xl:h-[70vh]'>
+        <div className='w-[95%] sm:w-[400px] 2xl:w-2/6'>
+          <h1 className='font-bold text-3xl sm:text-[45px] text-white'>
+            Butuh Bantuan?
+          </h1>
+          <p className='text-white text-sm sm:text-base'>
             Kami senantiasa membantu setiap permasalahan <br></br> yang kamu
             hadapi
           </p>
         </div>
         <img
-          className='h-72'
+          className='h-52 sm:h-72 2xl:h-[45vh]'
           src='/contact.webp'
           alt='contact'
         />
       </section>
-      <section className='flex flex-col sm:flex-row items-center justify-center lg:justify-between my-20'>
+      <section className='flex flex-col sm:flex-row items-center justify-center lg:justify-between 2xl:justify-center my-20'>
         {/* Left */}
         <div className='flex flex-col items-center sm:items-start sm:pl-10'>
           <img
@@ -34,7 +36,7 @@ function Contact() {
           </p>
         </div>
         {/* Right */}
-        <div className='w-full lg:w-1/2 px-10 mt-10 sm:mt-0'>
+        <div className='w-full lg:w-fit px-10 mt-10 sm:mt-0'>
           <h1 className='font-bold'>Kantor PT Nusantara Siber Integrasi</h1>
           <p className='text-[#686868]'>
             Maldives Garden Blok B2, Bekasi, Jawa Barat 17510

@@ -7,20 +7,20 @@ function Gevornance() {
   return (
     <div className='overflow-hidden'>
       <Nav />
-      <section className='w-full h-[90vh] sm:h-[70vh] lg:h-[50vh] xl:h-[90vh] bg-white flex flex-col-reverse lg:flex-row items-center justify-center lg:justify-around'>
+      <section className='w-full h-[90vh] sm:h-[70vh] lg:h-[50vh] xl:h-[90vh] bg-white flex flex-col-reverse lg:flex-row items-center justify-center lg:justify-around 2xl:h-[70vh]'>
         {/* Left */}
-        <div>
-          <h1 className='text-[#325BAB] font-bold text-3xl lg:text-[45px] leading-[3rem]'>
-            Tata Kelola <br></br> Perusahaan
+        <div className='w-[95%] sm:w-[400px] 2xl:w-2/6'>
+          <h1 className='text-[#325BAB] font-bold text-3xl lg:text-[45px] lg:leading-[3rem]'>
+            Tata Kelola <br className='2xl:hidden' /> Perusahaan
           </h1>
-          <p className='text-[#868686] mt-5'>
+          <p className='text-[#868686] mt-3 text-sm sm:text-base 2xl:text-lg'>
             Segala transparasi dan seluk beluk tata kelola <br></br> perusahaan
             NSI bisa kami lihat pada halaman ini
           </p>
         </div>
         {/* Right */}
         <img
-          className='sm:h-72'
+          className='sm:h-72 2xl:h-[45vh]'
           src='/tata.svg'
           alt='tata'
         />
